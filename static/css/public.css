@@ -1,0 +1,502 @@
+body{
+   font-size:14px !important;
+   min-width: 1366px;
+   overflow-x:hidden;
+}
+.text-center{
+   text-align:center
+}
+.text-muted {
+   color: #999;
+}
+.clearfix {
+   clear: both;
+}
+
+/*搜索框提示*/
+
+#suggest {
+   width: 100%;
+   background: #fff;
+   position: absolute;
+   top: 48px;
+   left: 0;
+   color: #333;
+   z-index: 2;
+   border: 1px solid #ddd;
+}
+
+#suggest li {
+   width: 100%;
+   height: 35px !important;
+   line-height: 35px;
+   cursor: pointer;
+}
+
+#suggest li:hover {
+   background: #ddd;
+}
+
+.hover {
+   background: #ddd;
+}
+
+#suggest li span {
+   margin-left: 15%;
+}
+
+#suggest p {
+   width: 100%;
+   height: 35px;
+   line-height: 35px;
+   cursor: pointer;
+   color: #999;
+   margin: 0;
+   padding-left: 6%;
+}
+
+#suggest i {
+   margin-right: 15px;
+}
+
+.suggest {
+   max-width: 85%;
+}
+
+#suggest .suggest i {
+   font-style: normal;
+   color: #428bca;
+   margin: 0;
+}
+
+#clearHistory {
+   float: right;
+   margin-top: 10px;
+   margin-right: 20px;
+}
+
+#clearHistory:hover {
+   color: #666;
+}
+
+
+/*搜索列表*/
+
+.ellipsis {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   max-width: 70%;
+   display: inline-block;
+   vertical-align: middle;
+   width: auto;
+   cursor: pointer;
+}
+
+.desc {
+   text-align: center;
+   line-height: 1.5em;
+   color: #ddd;
+   white-space: wrap;
+   overflow: hidden;
+   max-height: 4.5em;
+}
+
+.musiclist td img {
+   width: 50px;
+   height: 50px;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.song-name {
+   max-width: 250px;
+}
+
+.singer-name {
+   max-width: 200px;
+}
+
+.singer:hover,
+.name:hover {
+   color: #428bca;
+}
+
+.album-name {
+   max-width: 250px;
+}
+
+.singer-id {
+   display: none;
+}
+
+table {
+   width: 100%
+}
+
+table tr {
+   height: 70px;
+}
+
+table td .icon {
+   margin-right: 10px;
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   top: 3px;
+   visibility: hidden;
+}
+
+table td:nth-child(1) {
+   width: 35%;
+}
+
+table td:nth-child(2) {
+   width: 25%;
+}
+
+table td:nth-child(3) {
+   width: 25%;
+}
+
+table td:nth-child(4) {
+   width: 15%;
+}
+
+table tr:hover .icon {
+   visibility: visible;
+}
+
+.play-icon {
+   width: 37px;
+   height: 37px;
+   background: url('../image/icon.png') 0 0;
+}
+
+.play-icon:hover {
+   background-position: -40px 0;
+}
+
+.add-icon {
+   width: 37px;
+   height: 37px;
+   background: url('../image/icon.png') 0 -80px;
+}
+
+.add-icon:hover {
+   background-position: -40px -80px;
+}
+
+.download-icon {
+   width: 37px;
+   height: 37px;
+   background: url('../image/icon.png') 0 -120px;
+}
+
+.download-icon:hover {
+   background-position: -40px -120px;
+}
+
+.delete-icon {
+   width: 37px;
+   height: 37px;
+   background: url('../image/icon.png') 0 -160px;
+}
+
+.delete-icon:hover {
+   background-position: -40px -160px;
+}
+
+._thumbnail {
+   width: 130px;
+   height: 170px;
+   margin: 3% 0 0 5%;
+   float: left;
+}
+
+.playlist_thumbnail {
+   height: 190px;
+}
+
+.playlist_thumbnail .text-muted {
+   margin-right: 5px;
+}
+
+._thumbnail img {
+   width: 130px;
+   height: 130px;
+   cursor: pointer;
+}
+
+._thumbnail span {
+   line-height: 20px;
+   cursor: pointer;
+}
+
+._thumbnail .ellipsis {
+   width: auto;
+   max-width: 130px;
+}
+
+._thumbnail .img-div {
+   width: 130px;
+   height: 130px;
+   position: relative;
+}
+
+._thumbnail .img-div:hover .mask {
+   display: block;
+}
+
+._thumbnail .mask {
+   width: 130px;
+   height: 30px;
+   position: absolute;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.6);
+   display: none;
+   line-height: 30px;
+}
+
+._thumbnail i {
+   color: #ddd;
+   cursor: pointer;
+}
+
+._thumbnail i:hover {
+   color: #fff;
+}
+
+._thumbnail .mask .fa-play-circle {
+   font-size: 28px;
+   float: right;
+   margin-right: 5px;
+}
+
+._thumbnail .mask .fa-plus-circle {
+   font-size: 28px;
+   margin-left: 5px;
+}
+
+._thumbnail .mask .delete,
+._thumbnail .mask .edit {
+   font-size: 20px;
+   float: right;
+   margin-top: 5px;
+   margin-right: 5px;
+}
+
+._thumbnail .mask .edit {
+   margin-top: 6px;
+}
+
+._thumbnail .mask .play {
+   float: left !important;
+   margin-left: 5px;
+}
+
+.mv_thumbnail {
+   width: 300px;
+   height: 200px;
+   margin: 3% 0 0 6%;
+}
+
+.mv_thumbnail .img-div {
+   width: 300px;
+   height: 160px;
+   position: relative;
+}
+
+.mv_thumbnail .img-div:hover .img-mask {
+   display: block;
+}
+
+.mv_thumbnail img {
+   width: 300px;
+   height: 160px;
+}
+
+.mv_thumbnail .ellipsis {
+   width: auto;
+   max-width: 300px;
+}
+
+.mv_thumbnail .img-mask {
+   width: 300px;
+   height: 160px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   line-height: 180px;
+   background: rgba(0, 0, 0, 0.5);
+   text-align: center;
+   display: none;
+}
+
+.mv_thumbnail .mv-mask {
+   width: 300px;
+   height: 160px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   line-height: 180px;
+   background: rgba(0, 0, 0, 0.5);
+   text-align: center;
+}
+
+.mv_thumbnail .img-mask i,
+.mv_thumbnail .mv-mask i {
+   font-size: 60px;
+}
+
+.toolbar {
+   margin:20px 5%
+}
+
+.toolbar button{
+   margin-right:10px
+}
+
+.ivu-breadcrumb{
+   margin-top:10px
+}
+
+#find {
+   margin-left: 10px;
+}
+
+
+/*我的主页*/
+
+
+.bg{
+	width:100%;height:380px;background:url('../image/bg.jpg') center;
+	color:#fff;
+}
+
+.bg-top {
+   width: 100%;
+   height: 324px;
+   display: table;
+}
+
+.bg-top .wrapper {
+   display: table-cell;
+   vertical-align: middle;
+}
+
+.bg-top .user-img {
+   width: 100px;
+   height: 100px;
+   margin: 0 auto;
+}
+
+.bg-top .user-img img {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+}
+
+.bg-top .user-name {
+   font-size: 30px;
+   text-align: center;
+   margin-top: 10px;
+}
+
+.bg-top .user-follow {
+   width: 300px;
+   height: 50px;
+   margin: 10px auto;
+   padding-left: 100px;
+}
+
+.bg-top .follow,
+.bg-top .fan {
+   float: left;
+   margin-right: 30px;
+   cursor:pointer
+}
+.bg-top .follow:hover,
+.bg-top .fan:hover{
+   color:#2d8cf0
+}
+
+.bg-top .follow span:nth-child(1),
+.bg-top .fan span:nth-child(1) {
+   font-size: 20px;
+}
+
+.bg-bottom {
+   width: 100%;
+   height: 56px;
+}
+
+.bg-bottom ul li{
+   float:left;
+}
+
+.bg-bottom li span {
+   display: inline-block;
+   height: 56px;
+   line-height: 56px;
+   margin: 0 20px;
+   padding:0 10px;
+   cursor: pointer;
+}
+
+.bg-bottom li span:hover {
+   color: #428bca;
+}
+
+.bg-bottom button {
+   background: none;
+   color: #fff;
+   margin: 9px 20px;
+}
+
+.bg-bottom button:hover {
+   color: #fff;
+}
+
+.fa-mars {
+   color: #25A5E3;
+}
+
+.fa-venus {
+   color: #FFB9D5;
+}
+
+.follow-btn {
+   display: none;
+}
+
+.delete-btn {
+   display: inline-block;
+}
+
+.not_found {
+   width: 213px;
+   height: 230px;
+   margin: 50px auto;
+}
+
+.not_found_image {
+   width: 100%;
+   height: 203px;
+   background: url('../image/not_found.png') no-repeat
+}
+
+.not_found h1 {
+   text-align: center;
+   margin-top: 10px
+}
+
+.page{
+   margin-bottom:10px
+}
+
+
+
+
+
+

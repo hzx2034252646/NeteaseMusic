@@ -1,0 +1,272 @@
+﻿body,div,h1,img,input,table,tr,td,ul,li,form,p{
+    padding:0;margin:0;
+}
+ul{
+    list-style:none;
+}
+html,body{
+    width:100%;height:100%;position: relative;min-width:1366px;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif; font-size:14px;color:#333;overflow:hidden;
+    -moz-user-select:none;-webkit-user-select:none;-ms-user-select: none;
+}
+::-webkit-scrollbar{
+    width:0 !important;height:0 !important;
+}
+/*-----------------网页头部样式------------------*/
+header{
+    width:100%;height:10%;display:table;color:#ddd;
+}
+header .wrapper{
+    display:table-cell;vertical-align:middle;
+}
+header h1{
+    font-size:1.8em;margin-left:3%;color:#ddd;float:left;cursor:pointer;
+}
+/*--------------------网页主体样式-------------------------*/
+#container{
+    width:100%;height:75%;color:#ddd;
+}
+#container_left{
+    width:60%;height:100%;float:left;margin:0 5%;
+}
+#container_left table{
+    width:100%;
+}
+#container_left table td:nth-child(1){
+    width:45%;
+}
+#container_left table td:nth-child(2){
+    width:30%;
+}
+#container_left table td:nth-child(3){
+    width:25%;
+}
+.ellipsis{
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    display:inline-block;width:auto;
+}
+.song-name{
+    max-width:300px;
+}
+.singer-name{
+    max-width:180px;
+}
+#container_left .list_top{
+   height:10%;
+}
+#clear{
+    cursor:pointer;
+}
+#clear:hover{
+    color:#fff;
+}
+#clearList{
+    float:right;display:none;cursor:pointer;
+}
+#mainList{
+    width:100%;height:80%;border-top:1px solid rgba(255,255,255,.02);
+    border-bottom:1px solid rgba(255,255,255,.02);
+    position:relative; overflow:hidden;
+}
+#mainList table tr{
+    width:100%;height:50px;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.02);
+}
+#mainList table tr:hover .icon{
+    visibility:visible;
+}
+#mainList table .icon{
+    visibility:hidden;margin-left:5px;
+}
+.playing_icon{
+    width:10px;height:10px;display:inline-block;
+    background:url("../image/wave.gif");margin-left:15px;
+}
+.icon{
+    width:20px;height:20px;display:inline-block;cursor:pointer;
+}
+.play_icon{
+    width:37px;height:37px;background:url('../image/icon.png') -160px 0;
+}
+.play_icon:hover{
+    background-position:0 0;
+}
+.add_icon{
+    width:37px;height:37px;background:url('../image/icon.png') -160px -80px;
+}
+.add_icon:hover{
+    background-position:0 -80px;
+}
+.download_icon{
+    width:37px;height:37px;background:url('../image/icon.png') -160px -120px;
+}
+.download_icon:hover{
+    background-position:0 -120px;
+}
+.delete_icon{
+    width:37px;height:37px;background:url('../image/icon.png') -160px -160px;
+}
+.delete_icon:hover{
+    background-position:0 -160px;
+}
+.pic{
+    width:50%;margin:10% auto;
+}
+.pic img {
+    width:100%;height:100%;cursor:pointer;border-radius:50%;display:none
+}
+#container_right{
+    width:25%;height:100%;float:left;position:relative;
+}
+.content{
+    width:100%;height:45%;overflow:hidden;font-size:1em;
+    position:relative;bottom:0;
+}
+.lyric{
+    width:100%;position:absolute;top:0;color:#999;text-align:center;
+}
+.lyric p{
+    line-height:2.5em;
+}
+.active{
+    color:#fff;
+}
+/*图片旋转*/
+@keyframes rotate {
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(360deg)}
+}
+    /*-------------------网页尾部样式---------------------------*/
+footer{
+    width:100%;height:15%;display:table;color:#ddd;
+}
+footer .wrapper{
+    display:table-cell;vertical-align:middle;
+}
+footer .control{
+    margin-left:2%;float:left;width:20%;height:60%;
+}
+footer .control .icon{
+    margin-left:3%;margin-top:4%;
+}
+footer #prev{
+    width:30px;height:24px;background:url('../image/icons.png') 0 -96px;
+}
+footer #play{
+    width:25px;height:30px;background:url('../image/icons.png') 0 0;
+}
+footer #pause{
+    width:25px;height:30px;background:url('../image/icons.png') 0 -30px;display:none;
+}
+footer #next{
+    width:30px;height:24px;background:url('../image/icons.png') 0 -66px;
+}
+#singleLoop{
+    background:url('../image/icons.png') 0 -202px;display:none;
+}
+#listLoop{
+    background:url('../image/icons.png') 0 -182px;
+}
+#randomPlay{
+    background:url('../image/icons.png') 0 -222px;display:none;
+}
+.footer_main{
+    width:55%;height:60%;float:left;
+}
+.footer_main .container{
+    width:100%;height:50%;float:left;
+}
+.footer_main p{
+   float:left;max-width:60%;
+}
+#option{
+    float:right;margin-right:10%;margin-top:5px;cursor:pointer;
+}
+.colorbox{
+    display:inline-block;width:15px;height:15px;border-radius:2px;
+    margin-top:5px;margin-left:10px;cursor:pointer;
+}
+.lyric-bg{
+    width:96px;margin-bottom:5px;margin-left:30px;
+    padding:0 5px;border:1px solid #fff;cursor:pointer;
+}
+.switch{
+    padding:0 5px;border:1px solid #fff;cursor:pointer;margin-left:20px;
+}
+#show-trans{
+    margin-left:30px;
+}
+.lyric-bg:hover,.switch:hover{
+    border:1px solid #0ff;color:#0ff;
+}
+.on{
+    border:1px solid #0ff;color:#0ff;
+}
+.progress{
+    height:3px;background:#666;display:inline-block;cursor:pointer;position:relative;
+}
+#progress1{
+    width:85%;margin-bottom:3px;
+}
+.progressbar{
+    height:3px;width:0;background:#fff;position:absolute;top:0;left:0;
+}
+#progressbar1{
+    z-index:1;
+}
+#progressbar3{
+    background:#999;
+}
+.ball{
+    width:10px;height:10px;border-radius:50%;background:#fff;
+    position:absolute;top:-4px;left:0;
+}
+.footer_right{
+    width:15%;height:60%;float:left;margin-left:3%;
+}
+.footer_right .container{
+    height:18px;margin-top:12%;position:relative;
+}
+#volume_icon{
+    height:18px;background:url('../image/icons.png') 0 -296px;
+}
+#mute_icon{
+    background:url('../image/icons.png') 0 -314px;position:absolute;top:0;left:0;display:none;
+}
+#progress2{
+    width:70%;position:absolute;top:45%;left:15%;
+}
+.dot-move {
+    -moz-animation: dot-move 3s linear infinite;
+    -webkit-animation: dot-move 3s linear infinite;
+    -o-animation: dot-move 3s linear infinite;
+    -ms-animation: dot-move 3s linear infinite;
+}
+@keyframes dot-move{
+    0%{-webkit-box-shadow: 0 0 0px #fff;}
+    25%{-webkit-box-shadow: 0 0 10px #fff;}
+    50%{-webkit-box-shadow: 0 0 20px #fff;}
+    75%{-webkit-box-shadow: 0 0 10px #fff;}
+    100%{-webkit-box-shadow: 0 0 0px #fff;}
+}
+/*遮罩层样式*/
+.blur_bg {
+    width: 100%;height: 100%;position: absolute;top: 0;left: 0;
+    background-position:50%;background-repeat:no-repeat;background-size:cover;
+    z-index: -2;
+}
+.blur{
+    -webkit-filter: blur(30px);
+    -moz-filter: url(blur.svg#blur);
+}
+.bg_mask{
+    width:100%;height:100%;background:rgba(0,0,0,.7);position:absolute;top:0;left:0;z-index:-1;
+}
+.bgColor{
+    width:100%;height:100%;position:absolute;top:0;left:0;z-index:-2;display:none;
+    background:-webkit-linear-gradient(left top,rgb(220, 42, 19), rgb(157, 17, 159));
+    background:-moz-linear-gradient(left top,rgb(220, 42, 19), rgb(157, 17, 159));
+    background:-ms-linear-gradient(left top,rgb(220, 42, 19), rgb(157, 17, 159));
+    background:-o-linear-gradient(left top,rgb(220, 42, 19), rgb(157, 17, 159));
+}
