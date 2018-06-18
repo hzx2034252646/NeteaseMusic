@@ -1,8 +1,10 @@
-# neteasemusic
+# NeteaseMusic
 
-> A Vue.js project
+> 这是一个基于Vue2和[Meting](https://github.com/metowolf/Meting)的在线音乐网站
 
-## Build Setup
+在线预览 [http://120.79.128.142/NeteaseMusic](http://120.79.128.142/NeteaseMusic)
+
+## 安装运行
 
 ``` bash
 # install dependencies
