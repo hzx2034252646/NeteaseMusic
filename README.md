@@ -1,6 +1,6 @@
 # NeteaseMusic
 
-> 这是一个基于Vue2和[Meting](https://github.com/metowolf/Meting)的在线音乐网站
+> 该项目是一个基于Vue2和PHP的在线音乐网站，主要功能包括歌曲播放、下载、收藏、搜索以及歌词同步显示等等。前端技术栈采用vue的全家桶（vue+vuex+vue-router+vue-axios），UI框架采用iview，后端采用php + mysql + apache。
 
 在线预览 [http://120.79.128.142/NeteaseMusic](http://120.79.128.142/NeteaseMusic)
 
